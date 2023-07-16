@@ -40,7 +40,9 @@ function Header() {
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
-          <span>{user ? `Welcome ${user.displayName}` : "Login"}</span>
+          <Link to="/login">
+            <span>{user ? `Welcome ${user.displayName}` : "Login"}</span>
+          </Link>
           <hr />
         </div>
         {user && (
